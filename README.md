@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mkowsiak/marmot/main/images/marmot.png">
+  <img src="https://raw.githubusercontent.com/mkopsnc/marmot/main/images/marmot.png">
 </p>
 
 # Marmot
