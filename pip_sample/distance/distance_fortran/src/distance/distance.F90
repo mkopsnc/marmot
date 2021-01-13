@@ -18,7 +18,7 @@ module distance_module
       implicit none
 
       real, intent(in)  :: v
-      real, intent(out) :: t
+      real, intent(in) :: t
       real, intent(out) :: d
 
       d = v * t

@@ -18,7 +18,7 @@ module velocity_module
       implicit none
 
       real, intent(in)  :: x
-      real, intent(out) :: t
+      real, intent(in) :: t
       real, intent(out) :: v
 
       v = x/t
