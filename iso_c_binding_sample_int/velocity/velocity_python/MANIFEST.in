@@ -1,0 +1,2 @@
+include velocity_wrapper/libvelocitywrapper.dylib
+include velocity_wrapper/libvelocitywrapper.so
