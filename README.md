@@ -33,7 +33,10 @@ Building whole project is quite simple. Clone the project
 Once it is in place build the code
 
 ```
-> cd marmot/pip_sample
+# alternatively, you can build int based codes by changing dir to
+# > cd marmot/iso_c_binding_sample_int
+
+> cd marmot/iso_c_binding_sample_float
 > ./build.sh
 ```
 
