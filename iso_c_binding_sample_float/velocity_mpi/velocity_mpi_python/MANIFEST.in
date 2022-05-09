@@ -1,0 +1,2 @@
+include velocity_mpi_wrapper/libvelocitympiwrapper.dylib
+include velocity_mpi_wrapper/libvelocitympiwrapper.so
