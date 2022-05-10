@@ -5,16 +5,14 @@ program main
 
   implicit none
 
-
   integer :: ierror;
-  real    :: x = 10;
-  real    :: t = 2;
-  real    :: v = 0;
-
+  integer :: x  = 10;
+  integer :: t  = 2;
+  integer :: v  = 0;
 
   call MPI_INIT(ierror)
 
-  call velocity_mpi(x, t, v)
+  call velocity(x, t, v)
 
   write (*,*) 'Velocity', v
 

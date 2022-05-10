@@ -6,14 +6,14 @@ module velocity_mpi_module
 
     subroutine velocity_mpi_wrapper(x, t, v) bind(c, name="velocity_mpi_wrapper")
 
-      integer                        :: ierror
-      real (c_float), intent(inout)  :: x
-      real (c_float), intent(inout)  :: t
-      real (c_float), intent(inout)  :: v
+      integer                         :: ierror
+      integer (c_int), intent(inout)  :: x
+      integer (c_int), intent(inout)  :: t
+      integer (c_int), intent(inout)  :: v
 
       call velocity_mpi(x, t, v)
 
-      call MPI_BARRIER( MPI_COMM_WORLD, i_error)
+      call MPI_BARRIER( MPI_COMM_WORLD, i_error) 
 
     end subroutine      
 
@@ -21,9 +21,9 @@ module velocity_mpi_module
 
       implicit none
 
-      real, intent(in)  :: x
-      real, intent(in)  :: t
-      real, intent(out) :: v
+      integer, intent(in)  :: x
+      integer, intent(in)  :: t
+      integer, intent(out) :: v
 
       v = x/t
 
