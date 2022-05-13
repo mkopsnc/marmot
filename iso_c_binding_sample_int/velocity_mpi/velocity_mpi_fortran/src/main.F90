@@ -12,7 +12,7 @@ program main
 
   call MPI_INIT(ierror)
 
-  call velocity(x, t, v)
+  call velocity_mpi(x, t, v)
 
   write (*,*) 'Velocity', v
 

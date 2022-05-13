@@ -7,11 +7,15 @@ module velocity_mpi_module
     subroutine velocity_mpi_wrapper(x, t, v) bind(c, name="velocity_mpi_wrapper")
 
       integer                         :: ierror
+      integer, save                   :: counter = 1
       integer (c_int), intent(inout)  :: x
       integer (c_int), intent(inout)  :: t
       integer (c_int), intent(inout)  :: v
 
       call velocity_mpi(x, t, v)
+
+      v       = v       + counter
+      counter = counter + 1
 
       call MPI_BARRIER( MPI_COMM_WORLD, i_error) 
 

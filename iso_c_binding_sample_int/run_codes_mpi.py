@@ -15,5 +15,12 @@ if rank == 0:
 comm.Barrier()
 
 result = velocity_mpi( distance( 20, 2 ), 2) 
+print('Result (MPI) - counter = 1: ', result)
 
-print('Result (MPI): ', result)
+''' Checking SAVE attribute '''
+result = velocity_mpi( distance( 20, 2 ), 2) 
+print('Result (MPI) - counter = 2: ', result)
+
+result = velocity_mpi( distance( 20, 2 ), 2) 
+print('Result (MPI) - counter = 3: ', result)
+
